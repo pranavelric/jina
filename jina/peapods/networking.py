@@ -604,7 +604,7 @@ class GrpcConnectionPool:
     async def send_request_async(
         request: Request,
         target: str,
-        timeout=1.0,
+        timeout: float=1.0,
         https: bool =False,
     ) -> Request:
         """
